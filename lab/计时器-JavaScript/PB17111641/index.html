@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="丁伯尧">
+        <title>计时器</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header id="controler">
+            <form>
+                <input type="text", id="hour", pattern="[0-9]*", placeholder="0">
+                <label id="l1", class="lbl">时</label>
+
+                <input type="text", id="minute", pattern="[0-9]*", placeholder="0">
+                <label id="l2", class="lbl">分</label>
+
+                <input type="text", id="second", pattern="[0-9]*", placeholder="0">
+                <label id="l3", class="lbl">秒</label>
+            </form>
+
+            <button id="countup", class="before">开始正计时</button>
+            <button id="countdown", class="before">开始倒计时</button>
+
+            <p id="hint">正在倒计时 00:00:00</p>
+
+            <button id="clear"><span id="clear_text">清空倒计时</span></button>
+            <button id="reset"><span id="reset_text">重新再计时</span></button>
+
+            <button id="pause", class="PorR"><span class="textinP">暂停计时器</span></button>
+            <button id="resume", class="PorR"><span class="textinP">恢复计时器</span></button>
+        </header>
+        <div id="clock">
+            <p id="time">00:00:00</p>
+        </div>
+        <script type="text/javascript", src="app.js"></script>
+    </body>
+</html>

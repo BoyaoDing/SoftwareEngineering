@@ -1,0 +1,204 @@
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 1220px;
+    height: 70px;
+    background-color: #97A5BC;
+    border: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+input::-webkit-input-placeholder {position:relative; left:9px; width: 7px; height: 22px;}
+input {
+    margin: 0px,20px;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    color: #afafaf;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+}
+#hour {
+    position: fixed;
+    top: 15px;
+    left: 40px;
+}
+#minute {
+    position: fixed;
+    top: 15px;
+    left: 130px;
+}
+#second {
+    position: fixed;
+    top: 15px;
+    left: 220px;
+}
+
+.before {
+    width: 98px;
+    height: 40px;
+    background-color: #2188E9;
+    border-radius: 5px;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    border: none;
+}
+#countup {
+    position: fixed;
+    top: 15px;
+    left: 310px;
+}
+#countdown {
+    position: fixed;
+    top: 15px;
+    left: 428px;
+}
+
+label {
+    position: fixed;
+    z-index: 9;
+    top: 24px;
+    width: 32px;
+    height: 22px;
+    text-align: right;
+    color: #222222;
+}
+#l1 {
+    left: 69px;
+}
+#l2 {
+    left: 159px;
+}
+#l3{
+    left: 249px;
+}
+
+#clock {
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 1220px;
+    height: 440px;
+    background-color: #f2f4f7;
+}
+
+#time {
+    position: fixed;
+    top: 197px;
+    left: 131px;
+    width: 960px;
+    height: 200px;
+    color: #333333;
+    font-family: PTMono-Bold, "PT Mono", monospace;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 200px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+#hint {
+    position: fixed;
+    left: 40px;
+    top: 24px;
+    width: 192px;
+    height: 22px;
+    margin: 0px;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    display: none;
+}
+
+.PorR {
+    position: fixed;
+    top: 15px;
+    left: 227px;
+    width: 98px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2188e9;
+}
+
+.textinP {
+    position: fixed;
+    left: 236px;
+    top: 24px;
+    width: 80px;
+    height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+#resume {
+    display: none;
+}
+
+#pause {
+    display: none;
+}
+
+#clear {
+    position: fixed;
+    top: 15px;
+    left: 964px;
+    width: 98px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dd2e1d;
+    display: none;
+}
+
+#clear_text {
+    position: fixed;
+    left: 973px;
+    top: 24px;
+    width: 80px;
+    height: 22px;
+    color: #ffffff;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+#reset {
+    position: fixed;
+    top: 15px;
+    left: 1082px;
+    width: 98px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb020;
+    display: none;
+}
+
+#reset_text {
+    position: fixed;
+    left: 1091px;
+    top: 24px;
+    width: 80px;
+    height: 22px;
+    color: #ffffff;
+    font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
