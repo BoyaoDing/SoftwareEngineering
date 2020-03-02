@@ -13,28 +13,30 @@
 
 <script>
 export default {
-	name: "BeforeCounting",
-	data: function() {
-		return {
-			tempHour: 0,
-			tempMinute: 0,
-			tempSecond: 0
-		}
-	},
-	methods: {
-		counting (val) {
-			let data = val;
-			let inputHour = this.tempHour > 99 ? 99 : this.tempHour;
-			let inputMinute = this.tempMinute > 59 ? 59 : this.tempMinute;
-			let	inputSecond = this.tempSecond > 59 ? 59 : this.tempSecond;
-			this.$emit('startCounting', data, inputHour, inputMinute, inputSecond);
-    },
+  name: 'BeforeCounting',
+  data: function () {
+    return {
+      tempHour: 0,
+      tempMinute: 0,
+      tempSecond: 0
+    }
   },
+
+  methods: {
+    counting (val) {
+      let data = val
+      let inputHour = this.tempHour > 99 ? 99 : this.tempHour
+      let inputMinute = this.tempMinute > 59 ? 59 : this.tempMinute
+      let inputSecond = this.tempSecond > 59 ? 59 : this.tempSecond
+      this.$emit('startCounting', data, inputHour, inputMinute, inputSecond)
+    }
+  },
+
   mounted: function () {
-    let that = this;
+    let that = this
     window.onkeyup = function (event) {
-      if(event.keyCode == 13){
-        that.counting(1);
+      if (event.keyCode === 13) {
+        that.counting(1)
       }
     }
   }
@@ -43,14 +45,14 @@ export default {
 
 <style scoped>
 input::-webkit-input-placeholder {
-  position:relative; 
-  left:9px; 
-  width: 7px; 
-	height: 22px;
+  position:relative;
+  left:9px;
+  width: 7px;
+  height: 22px;
 }
 
 input {
-	padding-left: 9px;
+  padding-left: 9px;
   width: 61px;
   height: 38px;
   border-radius: 5px;
@@ -61,7 +63,7 @@ input {
   border: none;
 }
 #hour {
-	position: fixed;
+  position: fixed;
   top: 15px;
   left: 40px;
 }

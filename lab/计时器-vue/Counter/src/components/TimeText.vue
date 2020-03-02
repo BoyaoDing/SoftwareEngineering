@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "TimeText"
+  name: 'TimeText'
 }
 </script>
 
