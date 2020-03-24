@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>register</title>
+    </head>
+    <body>
+        <div>创建账户</div>
+        <div>
+            <form method="POST">
+                {% csrf_token %}
+                {% if message %}
+                    <div>{{ message }}</div>
+                {% endif %}
+                <div>
+                    <label for="username_inp">Username</label>
+                    <input type="text", id="username_inp", placeholder="Please Enter Username here", name="username">
+                </div>
+
+                <div>
+                    <label for="password_inp">Password</label>
+                    <input type="password", id="password_inp", name="password">
+                </div>
+                
+                <div>
+                    <input type="submit", value="Create">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

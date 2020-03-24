@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <div>登陆</div>
+        <div>
+            <form method="POST">
+                {% csrf_token %}
+                {% if message %}
+                    <div>{{ message }}</div>
+                {% endif %}
+                <div>
+                    <label for="username_inp">Username</label>
+                    <input type="text", id="username_inp", placeholder="Please Enter Username here", name="username">
+                </div>
+
+                <div>
+                    <label for="password_inp">Password</label>
+                    <input type="password", id="password_inp", name="password">
+                </div>
+
+                <div>
+                    <input type="submit", value="Login">
+                </div>
+            </form>
+        </div>
+        <div>
+            Don't have an account? <a href="{% url 'register' %}">Sign Up</a>
+        </div>
+    </body>
+</html>

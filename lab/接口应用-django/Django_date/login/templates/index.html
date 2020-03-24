@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+        <div>
+            {% if request.session.is_login %}
+                <h1>你好,{{ request.session.user_name }}！</h1>
+                <form method="POST">
+                    {% csrf_token %}
+                    <label for="date">日期</label>
+                    <div>
+                        <input type="date" name="date" id="date_info">
+                        <input type="submit", value="查询">
+                    </div>
+                </form>
+                {% if result %}
+                    <p>
+                        {{ result }}
+                    </p>
+                {% endif %}
+                <span><a href="{%  url 'logout' %}">logout</a> </span>
+            {% else %}
+                <h1>你尚未登录，请先登陆！</h1>
+                <span><a href="{%  url 'login' %}">login</a> </span>
+            {% endif %}
+            
+        </div>
+    </body>
+</html>
